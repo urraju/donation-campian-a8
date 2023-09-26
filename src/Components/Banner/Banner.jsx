@@ -2,8 +2,8 @@ import React from "react";
 
 const Banner = ({ handleSearch }) => {
   return (
-    <div className="flex justify-center items-center h-80">
-      <div className="bg-[url(https://i.ibb.co/tPz3tK9/Rectangle-4281.png?fbclid=IwAR2NBwfDCkiqEsYvwH7XU4DncCodQZZ34f3ILeWty0nbKGW4r4MPa7atIfU)] w-full h-96 md:h-[600] lg:h-[600px] absolute top-0 flex  justify-center  bg-cover bg-no-repeat items-center opacity-10  "></div>
+    <div className="flex justify-center md:items-center lg:items-center md:h-80 lg:h-80 ">
+      <div className="bg-[url(https://i.ibb.co/tPz3tK9/Rectangle-4281.png?fbclid=IwAR2NBwfDCkiqEsYvwH7XU4DncCodQZZ34f3ILeWty0nbKGW4r4MPa7atIfU)] w-full h-[420px] md:h-[500px] lg:h-[600px] absolute top-0 flex  justify-center  bg-cover bg-no-repeat items-center opacity-10  "></div>
       <div className=" text-center z-30 ">
         <h1 className=" text-2xl md:text-4xl w-72 md:w-full lg:w-full lg:text-5xl font-bold">
           I Grow By Helping People In Need
