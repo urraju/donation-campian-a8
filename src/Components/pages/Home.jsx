@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       <Banner handleSearch={handleSearch} />
-      <div className="grid mt-[230px] w-9/12 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+      <div className="grid my-10 md:mt-56 lg:mt-56 w-9/12 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
         {displayCards?.map((item) => (
           <HomeCard key={item.id} data={item} />
         ))}

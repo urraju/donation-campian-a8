@@ -8,11 +8,12 @@ import Statistics from '../pages/Statistics'
 import Root from '../Roots/Root'
 import DonationDetails from '../DonationDetails/DonationDetails'
 import Banner from '../Banner/Banner'
-
+import Error from '../ErrorElements/Error'
 const router = createBrowserRouter([
     {
         path: "/",
         element : <Root /> ,
+        errorElement: <Error />,
         children : [
             {
                 path : "/",
@@ -35,11 +36,7 @@ const router = createBrowserRouter([
                 loader : () => fetch('/public/data.json')
 
             },
-            {
-                path : "/banner",
-                element : <Banner />,
-                loader : () => fetch('/public/data.json')
-            }
+           
         ]
     }
 ])

@@ -29,7 +29,7 @@ const PieChart = ({ data }) => {
             height={500}
             series={[yourtPercentage, yourRemaing]}
             options={{ labels: ["Your Donation", "Total Donation"] }}
-             
+            
           />
         )}
          

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import { AiFillDollarCircle } from "react-icons/ai";
 const HomeCard = ({ data }) => {
   const {
     id,
@@ -15,8 +16,12 @@ const HomeCard = ({ data }) => {
   return (
     <div>
       <ToastContainer />
-      <Link  to={`/donation/${id}`}>
-        <div  onClick={() => toast("Selected Successfully")} style={{ background: card_bg_color }} className=" rounded-lg">
+      <Link to={`/donation/${id}`}>
+        <div
+          onClick={() => toast("Selected Successfully")}
+          style={{ background: card_bg_color }}
+          className=" rounded-lg"
+        >
           <img className="mx-auto w-full" src={picture} alt="" />
           <div className="px-2 py-4">
             <p
