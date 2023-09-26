@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
-
+ 
 const PieChart = ({ data }) => {
   const [getData, setGetData] = useState([]);
   const [notFound, setNotFound] = useState("");
@@ -22,13 +22,14 @@ const PieChart = ({ data }) => {
           <p className="h-[50vh]">{notFound}</p>
         ) : (
           <Chart
+           
             className="h-[40vh] flex flex-col-reverse"
             type="pie"
             width={400}
             height={500}
             series={[yourtPercentage, yourRemaing]}
             options={{ labels: ["Your Donation", "Total Donation"] }}
-            
+             
           />
         )}
          
