@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom'
 const MainLayout = () => {
 
     const Link = <>
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/donation">Donation</NavLink>
-    <NavLink to="/statistics">Statistics</NavLink>
+    <NavLink className={({isActive, isPending}) => isPending ? 'pending' : isActive ? 'text-rose-500 underline' : ''} to="/">Home</NavLink>
+    <NavLink className={({isActive, isPending}) => isPending ? 'pending' : isActive ? 'text-rose-500 underline' : ''} to="/donation">Donation</NavLink>
+    <NavLink className={({isActive, isPending}) => isPending ? 'pending' : isActive ? 'text-rose-500 underline' : ''} to="/statistics">Statistics</NavLink>
     
 </>
     return (

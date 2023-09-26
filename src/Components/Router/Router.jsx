@@ -7,6 +7,7 @@ import Home from '../pages/Home'
 import Statistics from '../pages/Statistics'
 import Root from '../Roots/Root'
 import DonationDetails from '../DonationDetails/DonationDetails'
+import Banner from '../Banner/Banner'
 
 const router = createBrowserRouter([
     {
@@ -25,13 +26,19 @@ const router = createBrowserRouter([
             },
             {
                 path : "/statistics",
-                element : <Statistics />
+                element : <Statistics />,
+                loader : () => fetch('/public/data.json')
             },
             {
                 path : "/donation/:id",
                 element : <DonationDetails />,
                 loader : () => fetch('/public/data.json')
 
+            },
+            {
+                path : "/banner",
+                element : <Banner />,
+                loader : () => fetch('/public/data.json')
             }
         ]
     }
