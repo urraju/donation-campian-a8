@@ -1,5 +1,5 @@
 import React from "react";
-
+import ErrorImg from "../../assets/Resources/notFound.png"
 const Error = () => {
   return (
     <div className="w-full">
@@ -7,7 +7,7 @@ const Error = () => {
         <div className="text-center">
           <img
             className="mb-6 mx-aut"
-            src="/src/assets/Resources/notFound.png"
+            src={ErrorImg}
             alt=""
           />
         </div>
